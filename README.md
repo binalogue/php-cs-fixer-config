@@ -10,6 +10,19 @@ Opinionated styling rules for PHP-CS-Fixer.
 
 ### Installing
 
+Because we haven't submitted the package to Packagist, you have to tell Composer where to find the package, using the repositories block:
+
+```json
+"repositories": [
+  {
+    "type": "vcs",
+    "url": "https://github.com/binalogue/php-cs-fixer-config"
+  }
+]
+```
+
+Then:
+
 ```bash
 composer require binalogue/php-cs-fixer-config:dev-master --dev
 ```
