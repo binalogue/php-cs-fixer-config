@@ -11,7 +11,7 @@ Opinionated styling rules for PHP-CS-Fixer.
 ### Installing
 
 ```bash
-composer require binalogue/php-cs-fixer-config --dev
+composer require binalogue/php-cs-fixer-config:dev-master --dev
 ```
 
 ### Usage
