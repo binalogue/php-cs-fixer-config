@@ -7,12 +7,12 @@ on:
     branches: [ master ]
 
 jobs:
-  style:
+  styles:php:
     runs-on: ubuntu-latest
-    name: "Style check"
+    name: "Check PHP coding styles"
 
     steps:
-    - name: checkout code
+    - name: Checkout code
       uses: actions/checkout@v2
 
     - name: Setup PHP
@@ -25,8 +25,8 @@ jobs:
     - name: Cache dependencies
       uses: actions/cache@v1
       with:
-          path: ~/.composer/cache/files
-          key: dependencies-composer-${{ hashFiles('composer.json') }}-v1
+        path: ~/.composer/cache/files
+        key: dependencies-composer-${{ hashFiles('composer.json') }}-v1
 
     - name: Install dependencies
       run: composer install --verbose --prefer-dist --no-interaction --no-suggest
@@ -34,5 +34,5 @@ jobs:
     - name: Check platform requirements
       run: composer check-platform-reqs --verbose
 
-    - name: Check style
-      run: ./vendor/bin/php-cs-fixer fix --dry-run --no-interaction --verbose
+    - name: Run php-cs-fixer
+      run: vendor/bin/php-cs-fixer fix --dry-run --no-interaction
