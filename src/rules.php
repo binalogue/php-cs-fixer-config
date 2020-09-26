@@ -1,7 +1,11 @@
 <?php
 
-/** last revision: v2.16.4 */
-
+/**
+ * Reference: https://github.com/FriendsOfPHP/PHP-CS-Fixer
+ * Examples: https://mlocati.github.io/php-cs-fixer-configurator/#version:2.16
+ *
+ * Last revision: v2.16.4
+ */
 return [
     '@PSR1' => true,
     '@PSR2' => true,
