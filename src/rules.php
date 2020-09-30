@@ -2,7 +2,7 @@
 
 /**
  * Reference: https://github.com/FriendsOfPHP/PHP-CS-Fixer
- * Examples: https://mlocati.github.io/php-cs-fixer-configurator/#version:2.16
+ * Examples: https://mlocati.github.io/php-cs-fixer-configurator/#version:2.16.
  *
  * Config from Laravel Shift: https://gist.github.com/laravel-shift/cab527923ed2a109dda047b97d53c200
  *
