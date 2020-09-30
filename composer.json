@@ -27,6 +27,6 @@
         ]
     },
     "scripts": {
-        "styles": "vendor/bin/php-cs-fixer fix"
+        "analyse": "vendor/bin/php-cs-fixer fix"
     }
 }
