@@ -29,6 +29,7 @@ return [
     'class_attributes_separation' => [
         'elements' => ['method'],
     ],
+    'comment_to_phpdoc' => true, // added by Mikel
     'concat_space' => true, // @Symfony
     'declare_equal_normalize' => true, // @Symfony
     'fully_qualified_strict_types' => true,
@@ -53,14 +54,7 @@ return [
     'no_blank_lines_after_phpdoc' => true, // @Symfony
     'no_empty_phpdoc' => true, // @Symfony
     'no_empty_statement' => true, // @Symfony
-    'no_extra_blank_lines' => [
-        'tokens' => [
-            'extra',
-            'throw',
-            'use',
-            'use_trait',
-        ],
-    ],
+    'no_extra_blank_lines' => true, // @Symfony, added by Mikel
     'no_leading_import_slash' => true, // @Symfony
     'no_leading_namespace_whitespace' => true, // @Symfony
     'no_mixed_echo_print' => true, // @Symfony
@@ -68,11 +62,13 @@ return [
     'no_short_bool_cast' => true, // @Symfony
     'no_singleline_whitespace_before_semicolons' => true, // @Symfony
     'no_spaces_around_offset' => true, // @Symfony
+    'no_superfluous_phpdoc_tags' => true, // @Symfony, added by Mikel
     'no_trailing_comma_in_list_call' => true, // @Symfony
     'no_trailing_comma_in_singleline_array' => true, // @Symfony
     'no_unneeded_control_parentheses' => true, // @Symfony
     'no_unreachable_default_argument_value' => true, // @Symfony
     'no_unused_imports' => true,
+    'no_useless_else' => true, // added by Mikel
     'no_useless_return' => true,
     'no_whitespace_before_comma_in_array' => true, // @Symfony
     'no_whitespace_in_blank_line' => true, // @Symfony
@@ -80,16 +76,29 @@ return [
     'not_operator_with_successor_space' => true,
     'object_operator_without_whitespace' => true, // @Symfony
     'ordered_imports' => true, // @Symfony
+    'php_unit_fqcn_annotation' => true, // @Symfony, added by Mikel
+    'phpdoc_align' => true, // @Symfony, added by Mikel
+    'phpdoc_annotation_without_dot' => true, // @Symfony, added by Mikel
     'phpdoc_indent' => true, // @Symfony
     'phpdoc_inline_tag' => true, // @Symfony
+    'phpdoc_line_span' => [ // added by Mikel
+        'const' => 'single',
+        'method' => 'single',
+        'property' => 'single',
+    ],
     'phpdoc_no_access' => true, // @Symfony
+    'phpdoc_no_alias_tag' => true, // added by Mikel
     'phpdoc_no_package' => true, // @Symfony
     'phpdoc_no_useless_inheritdoc' => true, // @Symfony
+    'phpdoc_order' => true, // added by Mikel
+    'phpdoc_return_self_reference' => true, // @Symfony, added by Mikel
     'phpdoc_scalar' => true, // @Symfony
+    'phpdoc_separation' => true, // @Symfony, added by Mikel
     'phpdoc_single_line_var_spacing' => true, // @Symfony
     'phpdoc_summary' => true, // @Symfony
     'phpdoc_to_comment' => true, // @Symfony
     'phpdoc_trim' => true, // @Symfony
+    'phpdoc_trim_consecutive_blank_line_separation' => true, // @Symfony, added by Mikel
     'phpdoc_types' => true, // @Symfony
     'phpdoc_var_without_name' => true, // @Symfony
     'psr4' => true, // @Symfony
@@ -101,6 +110,7 @@ return [
         'comment_types' => ['hash'],
     ],
     'single_quote' => true, // @Symfony
+    'single_trait_insert_per_statement' => true, // @Symfony, added by Mikel
     'space_after_semicolon' => true, // @Symfony
     'standardize_not_equals' => true, // @Symfony
     'strict_comparison' => true, // added by Mikel
